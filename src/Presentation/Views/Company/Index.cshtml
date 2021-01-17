@@ -1,0 +1,31 @@
+﻿@model IEnumerable<mediatR.Business.CompanyItems.Queries.GetCompanies.CompanyDto>
+
+<p>@Html.ActionLink("Create New Company", "Create", "Company", routeValues: null, htmlAttributes: new { @class = "btn btn-primary", @role = "button" }) </p>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Company</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var company in Model)
+            {
+            <tr>
+                <th scope="row">@company.Id</th>
+                <td>@company.Name</td>
+                <td>@Html.ActionLink("Update", "Update", "Company", routeValues: new { id = @company.Id }, htmlAttributes: new { @class = "btn btn-primary", @role = "button" })</td>
+                <td>@Html.ActionLink("Delete", "Delete", "Company", routeValues: new { id = @company.Id }, htmlAttributes: new { @class = "btn btn-danger", @role = "button" })</td>
+            </tr>
+
+            }
+        </tbody>
+    </table>
+
+
+</div>
