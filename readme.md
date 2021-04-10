@@ -22,7 +22,7 @@ sql server management studio
 git clone https://github.com/simonbinyamin/CleanArchitectureWithMVC.git
 ```
 ## Install .NET5 
-##Install SQL Server Express
+## Install SQL Server Express
 
 ```
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
