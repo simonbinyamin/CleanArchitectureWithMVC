@@ -1,4 +1,4 @@
-# Clean Architecture With MVC
+## Clean Architecture With MVC
 
 This Architecture is based on Jason solution, the difference is that this solution uses MVC in the presentation layer instead of Angular
 
@@ -6,7 +6,7 @@ the application is divided into:
 * DomainLayer - the core of the application
 * DataAccess - the database layer
 * Business - the application business layer
-* Presentation - the MVC application
+* Presentation - the MVC application\
 
 The application uses MediatR and CQRS to manage data. since the angular application is removed, asp .net core identity is used in the MVC application and for that the Area folder was shuffled. The Startup needs also to be modified, the ConfigureServices includes:
 
@@ -74,35 +74,35 @@ And your own controller inherits from the ApiBaseController
  public class CompanyController : ApiControllerBase 
 ```
 
-# Install the project for Windows
+## Install the project for Windows
 
-## Clone the the project 
+### Clone the the project 
 
 ```
 git clone https://github.com/simonbinyamin/CleanArchitectureWithMVC.git
 ```
 
-### Compiles and reloads for development
+#### Compiles and reloads for development
 
 ```
 open mediatR.sln and select MVC as startup project in Visual studio
 ```
 
-### other things you might need
+#### other things you might need
 
 ```
 sql server management studio
 ```
 
-# Install the project for Linux
-## Clone the the project 
+## Install the project for Linux
+### Clone the the project 
 
 ```
 git clone https://github.com/simonbinyamin/CleanArchitectureWithMVC.git
 ```
 
-## Install .NET5 
-## Install SQL Server Express
+### Install .NET5 
+### Install SQL Server Express
 
 ```
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
