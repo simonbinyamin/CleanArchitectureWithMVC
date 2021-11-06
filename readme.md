@@ -6,9 +6,9 @@ the application is divided into:
 * DomainLayer - the core of the application
 * DataAccess - the database layer
 * Business - the application business layer
-* Presentation - the MVC application\
+* Presentation - the MVC application__
 
-The application uses MediatR and CQRS to manage data. since the angular application is removed, asp .net core identity is used in the MVC application and for that the Area folder was shuffled. The Startup needs also to be modified, the ConfigureServices includes:
+The application uses MediatR and CQRS to manage data. since the angular application is removed, asp .net core identity is used in the MVC application and for that the Area folder was shuffled. The Startup needs also to be modified, the ConfigureServices includes:__
 
 ```
 services.ConfigureApplicationCookie(options =>
