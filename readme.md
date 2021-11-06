@@ -7,7 +7,7 @@ the application is divided into:
 * DataAccess - the database layer
 * Business - the application business layer
 * Presentation - the MVC application
-
+<br />
 The application uses MediatR and CQRS to manage data. since the angular application is removed, asp .net core identity is used in the MVC application and for that the Area folder was shuffled. The Startup needs also to be modified, the ConfigureServices includes:
 
 ```
